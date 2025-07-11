@@ -1,2 +1,2 @@
 # MTK
- Various prewritten functions and classes to aid in programming.
+ Various prewritten functions and classes to aid in programming in Python.

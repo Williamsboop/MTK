@@ -1,4 +1,4 @@
-![alt text](MTK_LOGO.png)
+![alt text](imgs/MTK_LOGO.png)
 
 # MTK
  Various prewritten functions and classes to aid in programming.

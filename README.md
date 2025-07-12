@@ -7,18 +7,13 @@
 
 ### Todo List:
 - [x] Write CLAMP class.
-- [ ] Write THREADING class.
 - [ ] Write SCRAPING class.
 
 # **Classes**
 
 ### CLAMP
 
-The *CLAMP* class returns an int or float bounded between two values.
-
-### THREADING
-
-The *THREADING* class will seek to streamline the process of multithreading.
+The *CLAMP* class returns an int or float bounded between two given values.
 
 ### SCRAPING
 

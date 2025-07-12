@@ -12,6 +12,14 @@
 
 # **Classes**
 
-## CLAMP
+### CLAMP
 
-The CLAMP object returns an int or float bounded between two values.
+The *CLAMP* class returns an int or float bounded between two values.
+
+### THREADING
+
+The *THREADING* class will seek to streamline the process of multithreading.
+
+### SCRAPING
+
+The *SCRAPING* class will seek to streamline the process of webscraping.

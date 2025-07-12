@@ -5,24 +5,24 @@ class CLAMP:
     def err(err: str) -> str:
         return f"\n !!! CLAMP Error: {err} !!! \n"
     
-    def __new__(cls: Self, _min_: Any, _mid_: Any, _max_: Any) -> Any:
+    def __new__(cls: type, _min_: Any, _mid_: Any, _max_: Any) -> Any:
         
         # Guard clause for banned types...
         for val in [_min_, _mid_, _max_]:
             if isinstance(val, (str, list, dict, set, tuple, complex)):
-                return cls.err(str(f"Cannot use type: {type(val).__name__} for value: {val}."))
+                return cls.err(f"Cannot use type: {type(val).__name__} for value: {val}.")
          
-        # Gaurd clause to determine if min > max...
+        # Guard clause to determine if min > max...
         if (_min_ > _max_):
-            return cls.err(str(f"Minimum value cannot be greater than maximum value."))
+            return cls.err(f"Minimum value cannot be greater than maximum value.")
             
-        # Gaurd clause to determine if min > mid...
+        # Guard clause to determine if min > mid...
         if (_min_ > _mid_):
-            return cls.err(str(f"Minimum value cannot be greater than middle value."))
+            return cls.err(f"Minimum value cannot be greater than middle value.")
             
-         # Gaurd clause to determine if mid > max...
+         # Guard clause to determine if mid > max...
         if (_mid_ > _max_):
-            return cls.err(str(f"Middle value cannot be greater than maximum value."))
+            return cls.err(f"Middle value cannot be greater than maximum value.")
         
         # Returns either a clamped integer or float depending on values...
         if all(isinstance(val, int) for val in [_min_, _mid_, _max_]):

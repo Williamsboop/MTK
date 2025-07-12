@@ -7,12 +7,11 @@
 
 ### Todo List:
 - [x] Write CLAMP class.
-[^CLAMP]
 - [ ] Write THREADING class.
 - [ ] Write SCRAPING class.
 
 # **Classes**
 
-## CLAMP[^CLAMP] 
+## CLAMP
 
 The CLAMP object returns an int or float bounded between two values.

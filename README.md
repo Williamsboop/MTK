@@ -6,7 +6,7 @@
 
 ### Todo List:
 - [x] Write CLAMP class.
-- [] Write SCRAPER class.
+- [ ] Write SCRAPER class.
 
 # **Classes**
 
